@@ -1,0 +1,51 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.footer{
+    font-size: 15px; 
+    text-align: center;
+
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: hsl(229, 23%, 23%);
+    color: hsl(212, 45%, 89%);
+
+}
+.footer a{
+    font-size: 15px; 
+}
+.footer a:link {
+    color: hsl(212, 45%, 89%);
+  }
+  
+
+.footer a:visited {
+    color: hsl(212, 82%, 55%);
+  }
+  
+
+.footer a:hover {
+    color: hsl(212, 77%, 68%);
+  }
+  
+
+.footer a:active {
+    color: blue;
+  }
