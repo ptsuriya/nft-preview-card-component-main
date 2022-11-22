@@ -15,42 +15,174 @@ body{
 
 .container{
 
-    margin-top: 150px;
-
+    margin-top: 115px;
 
     width: 350px;
-    height: 500px;
-    background-color: white;
+    height: 575px;
+    background-color: hsl(216, 50%, 16%);
 
     border-radius: 15px;
 
     overflow: hidden;
+    color: hsl(0, 0%, 100%);
 
 }
+@media only screen and (max-width: 375px){
+    .container{
+        width: 325px;
+    }
+}
+
+.pic{
+    position: relative;
+    margin-left: 25px;
+    margin-top: 25px;
+    width: 300px;
+    height: 300px;
+    border-radius: 10px;
+    background-image: url(./images/image-equilibrium.jpg);
+    background-size: cover;
+}
+
+@media only screen and (max-width: 375px){
+    .pic{
+        width: 275px;
+        height: 275px;
+    }
+}
+
+.hoverpic{
+    
+    position: absolute;
+
+    width: 300px;
+    height: 300px;
+    border-radius: 10px;
+    background-position: center;
+   
+}
+
+.hoverpic:hover{
+    transition: 0.5s;
+    background-image: url(./images/icon-view.svg);
+    background-color: hsla(178, 100%, 50%,0.5);
+    background-repeat: no-repeat;
+
+    background-position: center;
+}
+
+@media only screen and (max-width: 375px){
+    .pic{
+
+    }
+    .hoverpic{
+        width: 275px;
+        height: 275px;   
+    }
+
+}
+
 
 .box{
-        
-    display: flex;
-    flex-direction:column;
-    justify-content:center;
-    align-items: center;
+    margin-top: 15px;
+    margin-left: 25px;
 }
 
 
+.heder{
+    margin-top: 20px;
+    margin-left: 0;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.detail{
+    margin-top: 15px;
+    font-size: 18px;
+    font-weight: 300;
+    color:  hsl(215, 51%, 70%);
+}
+.inbox{
+    margin-top: 15px;
+    display: flex;
+    justify-content:space-between ;
+    width: 300px;
+}
+.price{
+    font-size: 16px;
+    color: hsl(178, 100%, 50%);
+    gap: 10px;
+    display: flex;
+    justify-content: space-evenly
+}
+
+.time{
+    font-size: 16px;
+    color: hsl(215, 51%, 70%);
+    gap: 10px;
+    display: flex;
+    justify-content: space-evenly
+
+}
+
+@media only screen and (max-width: 375px){
+    .inbox{
+        width: 275px;
+    }
+}
 
 
+.container a:link {
+    text-decoration: none;
+    color: hsl(0, 0%, 100%);
+  }
+  
+
+.container a:visited {
+    color:  hsl(0, 0%, 100%);
+  }
+  
+
+.container a:hover {
+    transition: 1s;
+    color: hsl(178, 100%, 50%);
+  }
+  
+
+.container a:active {
+    color: blue;
+  }
 
 
+hr{
+    margin-top: 20px;
+    margin-bottom: 20px ;
+    border-top: 0.25px solid hsl(0, 0%, 59%);
+    
+    width: 300px;
 
+    text-align:left;
+    border-color: hsl(215, 32%, 27%);
+}
 
-
-
-
-
-
-
-
-
+@media only screen and (max-width: 375px){
+    hr{
+        width: 275px;
+    }
+}
+.auther{
+    display: flex;
+    justify-content: flex-start;
+    align-items:center;
+    color: hsl(215, 51%, 70%);
+    gap: 10px;
+}
+.autherpic{
+    width: 35px;
+    height: auto;
+    border-radius: 100%;
+    border: 2px solid white;
+}
 
 
 .footer{
@@ -66,6 +198,7 @@ body{
 
 }
 .footer a{
+    text-decoration: none;
     font-size: 15px; 
 }
 .footer a:link {
@@ -79,6 +212,7 @@ body{
   
 
 .footer a:hover {
+    transition: 2s;
     color: hsl(212, 77%, 68%);
   }
   
