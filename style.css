@@ -54,7 +54,6 @@ body{
 .hoverpic{
     
     position: absolute;
-
     width: 300px;
     height: 300px;
     border-radius: 10px;
@@ -73,7 +72,8 @@ body{
 
 @media only screen and (max-width: 375px){
     .pic{
-
+        width: 275px;
+        height: 275px;  
     }
     .hoverpic{
         width: 275px;
